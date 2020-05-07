@@ -17,8 +17,8 @@ import xlrd
 # print("obtained sheet: " + usedSheet.name)
 
 # obtain a sheet in excel
-def Getsheetbysheetname(sheetName):
-    work_book = xlrd.open_workbook("TestTable.xls")
+def Getsheetbysheetname(excelName, sheetName):
+    work_book = xlrd.open_workbook(excelName)
     sheets = work_book.sheets()
 
     tmpSheet = None
@@ -43,7 +43,7 @@ def calculateSum (colIndex, rowStart, rowEnd, sheet):
     return sum
 
 
-usedSheet = Getsheetbysheetname("TestSheet")
+usedSheet = Getsheetbysheetname("TestTable.xls", "TestSheet")
 money_sum=calculateSum(1, 3, 15, usedSheet)
 
 print("sum_money", money_sum)
