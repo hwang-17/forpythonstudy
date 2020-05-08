@@ -22,6 +22,7 @@ def count(*strings):
                 space+=1
             else:
                 others+=1
+        # 注意占位的应用
         print("第 %d 个字符串共有：英文字母 %d 个，数字 %d 个，空格 %d 个，其他字符 %d 个。" %(eachstring+1, letter,digit,space,others))
 
 
