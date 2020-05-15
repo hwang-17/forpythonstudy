@@ -8,4 +8,5 @@ def hanoi(n,x,y,z):
 
 n=int(input("input the level of the hanoi:"))
 
+
 hanoi(n,"X","Y", "Z")
